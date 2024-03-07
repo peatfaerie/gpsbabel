@@ -1521,7 +1521,7 @@ UnicsvFormat::unicsv_waypt_disp_cb(const Waypoint* wpt)
     if (!wpt->HasUrlLink()) {
       unicsv_print_str("");
     } else {
-      UrlLink l = wpt->GetUrlLink();
+      const UrlLink& l = wpt->GetUrlLink();
       unicsv_print_str(l.url_);
     }
   }
